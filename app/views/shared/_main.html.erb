@@ -1,0 +1,6 @@
+<%= if content_for?(:sidebar)  %>
+  <%= yield :sidebar %>
+  <%= yield %>
+<%= else %>
+  <%= yield %>
+<%= end %>
